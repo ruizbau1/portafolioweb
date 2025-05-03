@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio | Michael Dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+        <div class="logo">Michael Dev</div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>      
+    <div class="hero-content" id="inicio">
+      <div class="hero-text">
+        <h1>Hola, soy <span>Michael</span></h1>
+        <p>Desarrollador Web Full Stack & Diseñador UI</p>
+        <a href="#contacto" class="btn">Contáctame</a>
+      </div>
+      <div class="hero-img">
+        <img src="michael.png" alt="Foto de Michael" />
+      </div>
+    </div>
+  </header>
+
+  <section id="sobre-mi" class="about section">
+    <h2>Sobre mí</h2>
+    <div class="about-content">
+      <img src="michael1.png" alt="Michael" class="about-img" />
+      <div>
+        <p>
+          Soy Michael, un desarrollador Full Stack con más de 5 años de experiencia creando soluciones digitales desde la planificación hasta la implementación. Me especializo en desarrollo web, diseño de interfaces, optimización de rendimiento y buenas prácticas de código.
+        </p>
+        <p>
+          Me considero autodidacta, creativo y comprometido con la mejora continua. Siempre estoy explorando nuevas tecnologías para mantenerme actualizado y ofrecer soluciones de calidad.
+        </p>
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="services section">
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card blue">
+        <h3>Desarrollo Web</h3>
+        <p>Sitios y sistemas robustos, escalables y modernos.</p>
+      </div>
+      <div class="card gray">
+        <h3>Diseño UI/UX</h3>
+        <p>Interfaces limpias, intuitivas y centradas en el usuario.</p>
+      </div>
+      <div class="card dark">
+        <h3>Consultoría</h3>
+        <p>Asesoría técnica y acompañamiento en tus proyectos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="section">
+    <h2>Habilidades Técnicas</h2>
+    <ul class="skills-list">
+      <li><strong>Lenguajes:</strong> JavaScript, HTML5, CSS3, PHP, Python</li>
+      <li><strong>Frameworks:</strong> React, Vue, Laravel, Express.js</li>
+      <li><strong>Bases de datos:</strong> MySQL, MongoDB, Firebase</li>
+      <li><strong>Herramientas:</strong> Git, GitHub, Figma, Docker</li>
+      <li><strong>Otros:</strong> APIs REST, SEO técnico, Testing con Jest</li>
+    </ul>
+  </section>
+
+  <section id="proyectos" class="section">
+    <h2>Proyectos Destacados</h2>
+    <div class="cards">
+      <div class="card blue">
+        <h3>Gestor de Tareas</h3>
+        <p>App web para organizar tareas usando React y Firebase, con autenticación y persistencia de datos en tiempo real.</p>
+        <a href="#" class="btn">Ver proyecto</a>
+      </div>
+      <div class="card gray">
+        <h3>Dashboard E-commerce</h3>
+        <p>Panel de administración para ventas en línea, desarrollado con Node.js y MongoDB. Diseño responsivo y seguro.</p>
+        <a href="#" class="btn">Ver proyecto</a>
+      </div>
+      <div class="card dark">
+        <h3>Landing Page Corporativa</h3>
+        <p>Sitio estático optimizado para SEO con diseño limpio, desarrollado con HTML, CSS y animaciones JavaScript.</p>
+        <a href="#" class="btn">Ver proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="section">
+    <h2>Experiencia Laboral</h2>
+    <div class="cards">
+      <div class="card gray">
+        <h3>Full Stack Developer - TechNova (2022 - Actualidad)</h3>
+        <p>Desarrollo de aplicaciones empresariales con React y Node.js. Implementación de API REST y conexión con bases de datos MongoDB.</p>
+      </div>
+      <div class="card dark">
+        <h3>Frontend Developer - PixelWeb (2020 - 2022)</h3>
+        <p>Diseño e implementación de interfaces responsivas y accesibles. Trabajo colaborativo con equipos de diseño y backend.</p>
+      </div>
+      <div class="card blue">
+        <h3>Diseñador Web Freelance (2018 - 2020)</h3>
+        <p>Creación de sitios web personalizados para pymes y emprendimientos. Enfoque en diseño limpio y buena usabilidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact section">
+    <h2>Contacto</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Tu nombre" required />
+      <input type="email" placeholder="Tu correo" required />
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Michael Dev | Todos los derechos reservados</p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('active');
+    }
+  </script>
+  
+</body>
+</html>
